@@ -5,12 +5,12 @@
 replicaCount: 1
 
 image:
-  repository: gcr.io/google-samples/gb-frontend
-  tag: v5
+  repository: ghcr.io/tronjob/blue-green-example
+  tag: v1
   pullPolicy: IfNotPresent
 
 service:
-  type: ClusterIP
+  type: NodePort 
   port: 80
 
 ingress:
